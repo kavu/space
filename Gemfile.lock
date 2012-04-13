@@ -1,8 +1,16 @@
 GIT
-  remote: git://github.com/niw/rb-fsevent.git
-  revision: 8754b16bd3b880a60621e01b0f7792c009c8e8a7
+  remote: git://github.com/thibaudgg/rb-fsevent.git
+  revision: 63c552f0af8ac5a0bd025d34a49f60e6bcffb099
   specs:
-    rb-fsevent (0.4.3)
+    rb-fsevent (0.9.1)
+
+PATH
+  remote: .
+  specs:
+    space (0.0.9)
+      ansi (~> 1.4.2)
+      hashr (~> 0.0.20)
+      rb-fsevent
 
 GEM
   remote: http://rubygems.org/
@@ -15,7 +23,7 @@ GEM
       thor (~> 0.14.6)
     guard-rspec (0.7.0)
       guard (>= 0.10.0)
-    hashr (0.0.20)
+    hashr (0.0.21)
     metaclass (0.0.1)
     mocha (0.10.5)
       metaclass (~> 0.0.1)
@@ -34,10 +42,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  ansi
   guard-rspec
-  hashr
   mocha
   rake
   rb-fsevent!
   rspec
+  space!

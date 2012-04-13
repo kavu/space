@@ -2,7 +2,7 @@ source :rubygems
 
 gemspec
 
-gem 'rb-fsevent', git: 'git://github.com/niw/rb-fsevent.git'
+gem 'rb-fsevent', git: 'git://github.com/thibaudgg/rb-fsevent.git'
 
 group :test do
   gem 'rake'
