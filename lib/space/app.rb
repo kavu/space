@@ -21,6 +21,9 @@ module Space
     private
 
       def cli_loop
+        Readline.completion_append_character = ""
+        Readline.completion_proc = ->(s){ project.names.grep(/#{Regexp.escape(s)}/) }
+
         loop do
           print "\e[3;0H"
           line = Readline.readline(views.first.send(:prompt), true) || break
