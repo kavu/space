@@ -12,9 +12,9 @@ Gem::Specification.new do |s|
   s.summary       = "space"
   s.description   = "space."
 
-  s.add_dependency 'ansi', '~> 1.4.2'
-  s.add_dependency 'hashr', '~> 0.0.20'
-  s.add_dependency 'rb-fsevent'
+  s.add_runtime_dependency 'ansi', '~> 1.4.2'
+  s.add_runtime_dependency 'hashr', '~> 0.0.20'
+  s.add_runtime_dependency 'rb-fsevent'
 
   s.files         = Dir.glob("{lib/**/*,[A-Z]*}")
   s.platform      = Gem::Platform::RUBY
