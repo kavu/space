@@ -9,4 +9,5 @@ group :test do
   gem 'rspec'
   gem 'guard-rspec'
   gem 'mocha'
+  gem 'simplecov'
 end
